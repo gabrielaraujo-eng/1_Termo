@@ -111,21 +111,22 @@ while True:
             if pagamento == "1":
                 print("Pagamento em dinheiro selecionado.")
                 print(f"Valor a pagar: R${valor}. Dirija-se ao caixa para efetuar o pagamento.")
-                print("Obrigado pela preferência, volte sempre!")
+                print(f"Obrigado pela preferência, volte sempre! veiculo numero {numerodoveiculo}")
             elif pagamento == "2":
                 print("Pagamento com cartão selecionado.")
                 print("1 debito ou 2 credito?")
                 cartao = input("Escolha: ")
                 if cartao == "1":
                     print("Pagamento no débito selecionado.")
-                    print("obrigado pela escolha volte sempre")
+                    print(f"Obrigado pela escolha, volte sempre! veiculo numero {numerodoveiculo}")
                 elif cartao == "2":
                     print("Pagamento no crédito selecionado.")
-                    print("obrigado pela escolha volte sempre")
+                    print(f"Obrigado pela escolha, volte sempre! veiculo numero {numerodoveiculo}")
             elif pagamento == "3":
                 print("Pagamento via Pix selecionado.")
                 print(f"Valor a pagar: R${valor}. Use o QR code ou chave Pix para efetuar o pagamento.")
-                print("Obrigado pela preferência, volte sempre!")
+                print(f"Obrigado pela preferência, volte sempre! veiculo numero {numerodoveiculo}")
+
             else:
                 print("Opção inválida de pagamento.")
 
