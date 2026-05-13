@@ -56,7 +56,7 @@ while True:
         print("6 - TAG não cadastrada.")
         print("Escolha um número para obter detalhes sobre o erro ou 0 para voltar ao menu principal.")
         print("0 - Voltar ao menu principal")
-        print("para melhor ausilhio entre em contato com o suporte 19 99999-9999")
+        print("para melhor auxílio entre em contato com o suporte 19 99999-9999")
 
         erro = input("Digite o número do erro para mais detalhes: ")
         if erro == "1":
@@ -99,6 +99,7 @@ while True:
 
         if entrada == "1":
             print("Cobrança será feita automaticamente na TAG.")
+            print(f"Obrigado pela preferência, volte sempre! veiculo numero {numerodoveiculo}")
 
         elif entrada == "2":
             print("Forma de pagamento:")
