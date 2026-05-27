@@ -19,11 +19,13 @@ while True:
     if pessoas_no_elevador < 0 or pessoas_no_elevador > 5:
         print("Número de pessoas inválido. Por favor, digite um número entre 0 e 5.")
         continue
+
     print(f"Pessoas no elevador: {pessoas_no_elevador}")
     andar_destino = int(input("Digite o andar de destino (0-10): "))
     if andar_destino < 0 or andar_destino > 10:
         print("Andar de destino inválido. Por favor, digite um número entre 0 e 10.")
         continue
+    
     print(f"Andar de destino: {andar_destino}")
     if andar_destino > andar_atual:
         print("Subindo..")
@@ -32,7 +34,7 @@ while True:
     else:
         print("Você já está no andar de destino.")
     print(f"Chegamos ao andar {andar_destino}.")
-    encerrar = input("Deseja encerrar o programa? (s/n): ")
+    encerrar = input("Deseja sair do elevador? (s/n): ")
     if encerrar == "s":
         print("Encerrando o programa. Obrigado por usar o Sistema de Elevador!")
         break
