@@ -3,7 +3,7 @@
 # O elevador começa no andar 0 e pode ser chamado por qualquer pessoa em qualquer andar.
 # O elevador deve se mover para o andar onde a pessoa chamou, e depois para o andar destino da pessoa.
 # O elevador deve exibir mensagens indicando o andar atual, o número de pessoas no elevador, e as ações realizadas (subindo, descendo, parando). O programa deve continuar rodando até que o usuário decida encerrar.
-
+import time
 print("===================================")
 print("Bem-vindo ao Sistema de Elevador!")
 print("===================================")
@@ -28,9 +28,13 @@ while True:
     
     print(f"Andar de destino: {andar_destino}")
     if andar_destino > andar_atual:
-        print("Subindo..")
+        for i in range(andar_atual + 1, andar_destino + 1):
+                print(f"Subindo... Andar {i}")
+                time.sleep(1)
     elif andar_destino < andar_atual:
-        print("Descendo..")
+        for i in range(andar_atual - 1, andar_destino - 1, -1):
+                print(f"Descendo... Andar {i}")
+                time.sleep(1)
     else:
         print("Você já está no andar de destino.")
     print(f"Chegamos ao andar {andar_destino}.")
