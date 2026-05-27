@@ -33,7 +33,7 @@ while True:
                 time.sleep(1)
     elif andar_destino < andar_atual:
         for i in range(andar_atual - 1, andar_destino - 1, -1):
-                print(f"Andar {i} Descendo...")
+                print(f" Andar {i} Descendo...")
                 time.sleep(1)
     else:
         print("Você já está no andar de destino.")
