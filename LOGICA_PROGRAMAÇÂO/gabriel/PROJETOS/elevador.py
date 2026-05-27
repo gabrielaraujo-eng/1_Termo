@@ -29,11 +29,11 @@ while True:
     print(f"Andar de destino: {andar_destino}")
     if andar_destino > andar_atual:
         for i in range(andar_atual + 1, andar_destino + 1):
-                print(f"Subindo... Andar {i}")
+                print(f"Andar {i} Subindo...")
                 time.sleep(1)
     elif andar_destino < andar_atual:
         for i in range(andar_atual - 1, andar_destino - 1, -1):
-                print(f"Descendo... Andar {i}")
+                print(f"Andar {i} Descendo...")
                 time.sleep(1)
     else:
         print("Você já está no andar de destino.")
