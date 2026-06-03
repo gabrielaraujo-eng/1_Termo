@@ -14,11 +14,11 @@ from tkinter import messagebox
 janela = tk.Tk()
 janela.title("Minha primeira janela em GUI")
 janela.geometry("400x400")
-janela.configure(bg = "#0400ff")
+janela.configure(bg = "#8f8df8")
 
 # 2. Criar função do botão
 def mostrar_mensagens():
-    messagebox.showinfo("Sucesso", "voçe clicou no botao :) ")
+    messagebox.showinfo("Nerd ","hehe")
 
 # 3. Criar componentes
 lbl_titulo_pagina = tk.Label(janela, text="bem vindo a aula de interface grafica em python", font=("Arial", 14,"bold"))
