@@ -1,4 +1,4 @@
-import math
+import math # importa uma biblioteca padrao do python (math)
 
 # mostra o valor de pi
 print("Valor de pi:", math.pi)
@@ -13,10 +13,23 @@ pi_arredondado = round(math.pi, casas)
 print("Pi arredondado:", pi_arredondado)
 
 #outro jeito sem import
-c = int(input("Digite o valor de c(circunferência): "))
-d = int(input("Digite o valor de d(diâmetro): "))
-pi = c / d
-print("Valor de pi:", pi)
-casas = int(input("Quantas casas decimais você quer arredondar? ")) 
-pi_arredondado = round(pi, casas)
-print("Pi arredondado:", pi_arredondado)
+valor = input("Gostaria de calcular o valor de pi?(s/n): ")
+
+if valor == "s":
+    print("pi = c / d")
+    c = int(input("Digite o valor de c(circunferência): "))
+    d = int(input("Digite o valor de d(diâmetro): "))
+    if d == 0:
+        print("divisão por zero nao é possivel")
+    else:
+        pi = c / d
+        print("Valor de pi:", pi)
+        casas = int(input("Quantas casas decimais você quer arredondar? ")) 
+        pi_arredondado = round(pi, casas)
+        print("Pi arredondado:", pi_arredondado)
+
+elif valor == "n":
+    print("OK")
+
+else:
+    print("resposta foi diferente de sim e nao")
