@@ -46,3 +46,20 @@
 ### Definição de Funções
 *   `def`: Comando utilizado para declarar uma função ou bloco de código reutilizável.
 *   `return`: Finaliza a execução da função e retorna um valor para quem a chamou.
+
+---
+
+## 4. Interfaces Gráficas com Tkinter e CustomTkinter
+*   **Tkinter**: Biblioteca padrão do Python para criação de janelas e interfaces visuais (GUI).
+*   **Gerenciadores de Layout**:
+    *   `pack()`: Organiza os elementos em blocos sequenciais (cima, baixo, esquerda, direita).
+    *   `grid()`: Organiza os elementos em uma tabela invisível dividida por linhas (`row`) e colunas (`column`).
+*   **Componentes Principais (Widgets)**:
+    *   `Label`: Utilizado para exibir textos ou títulos fixos na tela.
+    *   `Button`: Cria botões clicáveis para disparar funções ou comandos no sistema.
+    *   `Entry`: Campo de caixa de texto simples para entrada de dados pelo usuário.
+    *   `Combobox (ttk)`: Menu de lista suspensa (dropdown) para seleção de opções pré-definidas.
+*   **Ferramentas Visuais Avançadas**:
+    *   `ttk` (Themed Tkinter): Extensão que traz um visual mais moderno, limpo e nativo do sistema operacional para os componentes.
+    *   `messagebox`: Módulo utilizado para disparar caixas de alerta, avisos de erro, notificações de sucesso ou perguntas de confirmação na tela.
+
