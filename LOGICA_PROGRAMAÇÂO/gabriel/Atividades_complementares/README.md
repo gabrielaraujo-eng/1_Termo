@@ -1,8 +1,7 @@
 # Lógica de Programação
 
-Este repositório contém minhas atividades de estudo em:
+Este repositório contém minhas atividades de estudos extra curriculares em:
 - HTML
 - Python
 - Haskell
 
-Em evolução constante 
