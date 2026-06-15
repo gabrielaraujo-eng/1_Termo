@@ -5,4 +5,4 @@ Este repositório contém minhas atividades de estudo em:
 - Python
 - Haskell
 
-Em evolução constante 🚀
+Em evolução constante 
