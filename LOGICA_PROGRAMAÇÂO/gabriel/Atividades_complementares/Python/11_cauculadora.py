@@ -2,17 +2,20 @@
 import tkinter as tk
 from tkinter import messagebox
 
+#configurações da janela
 janela = tk.Tk()
 janela.title("Calculadora - Grafica")
 janela.geometry("400x400")
 # janela.config(bg = "#1e2134")
 
+# definindo variaveis
 numero = ""
 num1 = 0 
 num2 = 0
 operacao = ""
 visor = ""
 
+#defs
 def um():
     adicionar("1")
 def dois():
@@ -116,7 +119,7 @@ def igual():
     operacao = ""
     visor = str(resultado)
 
-
+#componentes da tela
 lbl_visor = tk.Label(janela, text="Calcule!", font=("Arial", 18))
 
 btn_um = tk.Button(janela, text="1", font=("Arial", 14), command=um)
@@ -137,6 +140,7 @@ btn_divisao = tk.Button(janela,text="/", font=("Arial", 14), command=divisao)
 btn_limpar = tk.Button(janela,text="C", font=("Arial", 14), command=limpar)
 btn_igual = tk.Button(janela,text="=", font=("Arial", 14), command=igual)
 
+#local onde fica os componentes
 lbl_visor.grid(row=0,column=0,columnspan=4)
 
 btn_um.grid(row=1, column=0)
@@ -158,4 +162,5 @@ btn_divisao.grid(row=4, column=3)
 btn_igual.grid(row=5, column=3)
 
 
+#loop da janela
 janela.mainloop()
